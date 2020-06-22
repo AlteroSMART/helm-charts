@@ -3,7 +3,22 @@ entries:
   tsdb:
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-06-19T18:21:50.187718498+05:00"
+    created: "2020-06-22T16:53:59.254733868+05:00"
+    description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
+    digest: cf4d9a48d6c7a32477ce710517c922c84a54a87754ebcde55c209dd1311b1a41
+    keywords:
+    - clickhouse
+    - influxdb
+    - yandex
+    kubeVersion: '>= 1.16.0'
+    name: tsdb
+    type: application
+    urls:
+    - https://alterosmart.github.io/helm-charts/tsdb-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 0.7.0
+    created: "2020-06-22T16:53:59.254324877+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 61c280a0fc98ffed35352c20511912c9200212d057970d34608989bd7acb4c8e
     keywords:
@@ -16,4 +31,4 @@ entries:
     urls:
     - https://alterosmart.github.io/helm-charts/tsdb-0.2.0.tgz
     version: 0.2.0
-generated: "2020-06-19T18:21:50.186270477+05:00"
+generated: "2020-06-22T16:53:59.253705576+05:00"

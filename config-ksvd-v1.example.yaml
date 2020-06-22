@@ -8,6 +8,7 @@ au_tsdb_storage:
   dbUsername: 'root'
   dbPassword: '123123123'
   clickhouseImageTag: '20.3.11.97'  # LTS: 20.3.11.97
+  clickhouseOutputFormatJsonQuote64bitIntegers: 'false'
   clickhousePortData: 8123
   influxdbImageTag: '1.7.10-alpine'
   influxdbPortData: 8086
