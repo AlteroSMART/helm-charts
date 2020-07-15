@@ -1,15 +1,17 @@
 # Example values for HELM-charts 'au/ksvd', 'au/pdc' and 'au/tsdb'
 
-au_tsdb:
-  monitoringEnabled: true
-
 au_tsdb_storage:
   dbStorage: 'clickhouse'
   dbUsername: 'root'
   dbPassword: '123123123'
-  clickhouseImageTag: '20.3.11.97'  # LTS: 20.3.11.97
-  clickhouseOutputFormatJsonQuote64bitIntegers: 'false'
+  clickhouseImageTag: '20.3.13.127'  # 20.3 LTS
+  clickhouseOutputFormatJsonQuote64bitIntegers: 'false'  # KSVD 1.0 = 'false'; 1.x = 'true'
   clickhousePortData: 8123
+  clickhouseTemporaryDirectoriesLifetime: 3600
   influxdbImageTag: '1.7.10-alpine'
   influxdbPortData: 8086
   monitoringEnabled: true
+  resources:  # {}
+    requests:
+      cpu: 300m
+      memory: 2000Mi
