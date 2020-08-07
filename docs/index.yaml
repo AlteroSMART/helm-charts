@@ -3,7 +3,22 @@ entries:
   tsdb:
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-07-15T20:23:58.001279584+05:00"
+    created: "2020-08-07T18:03:43.066157705+05:00"
+    description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
+    digest: 48f78876a54c76b59e3d159a36c5f3d9b8b271f6cfd43f99ef5e6934b6a48603
+    keywords:
+    - clickhouse
+    - influxdb
+    - yandex
+    kubeVersion: '>= 1.16.0'
+    name: tsdb
+    type: application
+    urls:
+    - https://alterosmart.github.io/helm-charts/tsdb-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 0.7.0
+    created: "2020-08-07T18:03:43.065761948+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 2b10ea5924d957cc32a44a66d73a53c9e52989a848b984c6718c6259f9d99495
     keywords:
@@ -18,7 +33,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-07-15T20:23:58.000544274+05:00"
+    created: "2020-08-07T18:03:43.065276347+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 23f52b333eaac6d6966506b618a05ff9161c582776900dc34215782688c75e90
     keywords:
@@ -33,7 +48,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-07-15T20:23:57.999627453+05:00"
+    created: "2020-08-07T18:03:43.064864133+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: cf4d9a48d6c7a32477ce710517c922c84a54a87754ebcde55c209dd1311b1a41
     keywords:
@@ -48,7 +63,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-07-15T20:23:57.998418204+05:00"
+    created: "2020-08-07T18:03:43.064429078+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 61c280a0fc98ffed35352c20511912c9200212d057970d34608989bd7acb4c8e
     keywords:
@@ -61,4 +76,4 @@ entries:
     urls:
     - https://alterosmart.github.io/helm-charts/tsdb-0.2.0.tgz
     version: 0.2.0
-generated: "2020-07-15T20:23:57.997164306+05:00"
+generated: "2020-08-07T18:03:43.063881537+05:00"
