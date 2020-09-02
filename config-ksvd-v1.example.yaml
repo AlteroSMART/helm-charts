@@ -1,5 +1,60 @@
 # Example values for HELM-charts 'au/ksvd', 'au/pdc' and 'au/tsdb'
 
+au_data_quality:
+  version: 0.8.2
+  env:
+    CHECK_MISSING: 'false'
+    CONFIG_UPDATE_INTERVAL: '15s'
+    NEED_SCALE_VALUES: 'false'
+  logLevel: info  # lowercase
+
+au_front:
+  version: 0.10.2-pdc.13
+
+au_nsi:
+  version: 0.10.7
+  jwtKey: 1VeryLongString
+  logLevel: INFO  # UPPERCASE
+
+au_nsi_postgres:
+  version: 11-alpine
+  database: postgres
+  username: postgres
+  password: admin123dev
+
+au_router:
+  version: 0.5.5
+  env:
+    DQ_ENABLED: 'true'
+    LFO_ENABLED: 'false'
+  logLevel: info  # lowercase
+  replicas: 1
+
+au_soap_export:
+  version: 0.3.24
+  portNode: false  # false / 32000
+  logLevel: INFO  # UPPERCASE
+
+au_te:
+  version: 0.1.3
+  env:
+    DELTA_START: '2000000'
+    DELTA_END: '10000000'
+    SLEEP_DURATION_FOR_TIMER: '10000'
+  logLevel: info  # lowercase
+
+au_tsdb:
+  version: 0.7.3
+  cacheDb: redis  # none / redis
+  env:
+    BATCH_WRITE_DELAY: '1'
+    BATCH_WRITE_SIZE: '5'
+    REDUCE_COEFFICIENTS: '5'
+  logLevel: INFO  # UPPERCASE
+  monitoringEnabled: true
+  replicas: 2
+  #storageClickhouseHostname: 'ksvd-tsdb-clickhouse'
+
 au_tsdb_storage:
   dbStorage: 'clickhouse'  #  all / clickhouse / influxdb
   dbUsername: 'root'
@@ -17,3 +72,14 @@ au_tsdb_storage:
     requests:
       cpu: '300m'
       memory: '2000Mi'
+
+data_receiver:
+  env:
+    NEED_SCALE_VALUES: 'true'
+    NEED_SEND_TO_RETRANSLATOR: 'true'
+    RMQ_BATCH_SIZE: '1'
+    RMQ_EXCHANGE: 'raw'
+  logLevel: info
+
+ingress:
+  accessByIP: true
