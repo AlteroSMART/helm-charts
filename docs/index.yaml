@@ -3,7 +3,7 @@ entries:
   ksvd:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-09-02T18:02:29.419802867+05:00"
+    created: "2020-11-24T17:10:40.005818948+05:00"
     description: The "Prostor.KSVD" - Phasor Data Concentrator (PDC) for building
       wide-area monitoring systems (WAMS) module.
     digest: 9c11d54e85a6df7abc5ffa2ee20e36d308757993f980e04e691009fa71bd9f2a
@@ -21,7 +21,22 @@ entries:
   tsdb:
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-09-02T18:02:29.424128246+05:00"
+    created: "2020-11-24T17:10:40.010053072+05:00"
+    description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
+    digest: 58a27f3003ad7aff44328f5fcab85b10029b42efdd46300f0847427371828d8a
+    keywords:
+    - clickhouse
+    - influxdb
+    - yandex
+    kubeVersion: '>= 1.16.0'
+    name: tsdb
+    type: application
+    urls:
+    - https://alterosmart.github.io/helm-charts/tsdb-0.2.6.tgz
+    version: 0.2.6
+  - apiVersion: v2
+    appVersion: 0.7.0
+    created: "2020-11-24T17:10:40.009482618+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 46df3ca7a54f256dff61830b8d978218da82560718249b79b291fd590d3dad07
     keywords:
@@ -36,7 +51,7 @@ entries:
     version: 0.2.5
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-09-02T18:02:29.423695189+05:00"
+    created: "2020-11-24T17:10:40.008836552+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 48f78876a54c76b59e3d159a36c5f3d9b8b271f6cfd43f99ef5e6934b6a48603
     keywords:
@@ -51,7 +66,7 @@ entries:
     version: 0.2.4
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-09-02T18:02:29.423225514+05:00"
+    created: "2020-11-24T17:10:40.008240773+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 2b10ea5924d957cc32a44a66d73a53c9e52989a848b984c6718c6259f9d99495
     keywords:
@@ -66,7 +81,7 @@ entries:
     version: 0.2.3
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-09-02T18:02:29.422777904+05:00"
+    created: "2020-11-24T17:10:40.007625622+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 23f52b333eaac6d6966506b618a05ff9161c582776900dc34215782688c75e90
     keywords:
@@ -81,7 +96,7 @@ entries:
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-09-02T18:02:29.422374904+05:00"
+    created: "2020-11-24T17:10:40.007032942+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: cf4d9a48d6c7a32477ce710517c922c84a54a87754ebcde55c209dd1311b1a41
     keywords:
@@ -96,7 +111,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.7.0
-    created: "2020-09-02T18:02:29.421889094+05:00"
+    created: "2020-11-24T17:10:40.006447891+05:00"
     description: The TimeSeries DataBase for AlteroUniversal (ClickHouse/InfluxDB/TimeScaleDB)
     digest: 61c280a0fc98ffed35352c20511912c9200212d057970d34608989bd7acb4c8e
     keywords:
@@ -109,4 +124,4 @@ entries:
     urls:
     - https://alterosmart.github.io/helm-charts/tsdb-0.2.0.tgz
     version: 0.2.0
-generated: "2020-09-02T18:02:29.417853564+05:00"
+generated: "2020-11-24T17:10:40.003251669+05:00"
