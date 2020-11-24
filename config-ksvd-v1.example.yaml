@@ -59,7 +59,7 @@ au_tsdb_storage:
   dbStorage: 'clickhouse'  #  all / clickhouse / influxdb
   dbUsername: 'root'
   dbPassword: '123123123'
-  clickhouseImageTag: '20.3.17.173'  # '20.3.17.173'  # 20.3 LTS. full-verified: 20.3.17.173
+  #clickhouseImageTag: '20.3.21.2'  # '20.3.17.173'  # 20.3 LTS. full-verified: 20.3.17.173
   #clickhouseMaxServerMemoryUsage: 'none'  # none; 8G = 8589934592 ; 10G = 10737418240
   #clickhouseMaxServerMemoryUsageRatio: '0.85'  # none; 0..1. Example: 0.9  (used if clickhouseMaxServerMemoryUsage isn't set)
   clickhouseOutputFormatJsonQuote64bitIntegers: 'false'  # KSVD 1.0 = 'false'; 1.x = 'true'
